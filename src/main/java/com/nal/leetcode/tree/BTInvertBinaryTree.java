@@ -1,6 +1,6 @@
 package com.nal.leetcode.tree;
 
-import com.nal.datastructures.trees.TreeNode;
+import com.nal.TreeNode;
 
 /**
  * Created by nishant on 31/01/20.

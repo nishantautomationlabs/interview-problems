@@ -1,6 +1,6 @@
 package com.nal.leetcode.tree;
 
-import com.nal.datastructures.trees.TreeNode;
+import com.nal.TreeNode;
 import java.util.HashMap;
 import java.util.Map;
 

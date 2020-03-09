@@ -38,7 +38,7 @@ public class UniqueEmailAddresses {
 
             uniqueEmail.add(localName + domainName);
         }
-//        Iterator iterator = uniqueEmail.iterator();
+//        Iterator iterato r = uniqueEmail.iterator();
 //        while(iterator.hasNext())
 //            System.out.println(iterator.next());
         return uniqueEmail.size();
