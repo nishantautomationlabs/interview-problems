@@ -17,6 +17,39 @@ package com.nal.leetcode.arrays;
  */
 public class FruitIntoBaskets {
 
+    public int totalFruit2(int[] tree) {
+        if(tree == null || tree.length == 0) {
+            return 0;
+        }
+        int left = 0;
+        int lastFruit = -1;
+        int lastFruitIndex = -1;
+        int secondLastFruit = -1;
+        int secondLastFruitIndex = -1;
+        int maxFruit = 0;
+        for(int right = 0; right < tree.length; right++) {
+            if(lastFruit == -1) {
+                lastFruit = tree[right];
+                lastFruitIndex = right;
+            }
+            if(tree[right] != lastFruit && tree[right] != secondLastFruit) {
+                left = secondLastFruitIndex + 1;
+            }
+            if(tree[right] == lastFruit) {
+                lastFruitIndex = right;
+            }
+            else {
+                secondLastFruit = lastFruit;
+                secondLastFruitIndex = lastFruitIndex;
+                lastFruit = tree[right];
+                lastFruitIndex = right;
+            }
+            maxFruit = Math.max(maxFruit, right - left + 1);
+
+        }
+        return maxFruit;
+    }
+
     public int totalFruit(int[] tree) {
         if (tree == null || tree.length == 0)
             return 0;
@@ -41,8 +74,6 @@ public class FruitIntoBaskets {
                 secondLastType = lastType;
                 lastType = tree[j];
             }
-
-
             result = Math.max(result, currentRes);
         }
         return result;

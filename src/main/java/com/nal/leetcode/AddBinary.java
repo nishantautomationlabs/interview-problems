@@ -1,4 +1,4 @@
-package com.nal.leetcode;
+ package com.nal.leetcode;
 
 /**
  * Created by nishant on 04/02/20.

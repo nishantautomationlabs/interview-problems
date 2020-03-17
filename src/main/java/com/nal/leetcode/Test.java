@@ -11,11 +11,25 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         List<List<Integer>> result = new ArrayList<>();
-        List<Integer> list = new ArrayList<>(Arrays.asList(new Integer[] {1,2,3}));
+        List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3));
         result.add(list);
-        List<Integer> list2 = new ArrayList<Integer>(Arrays.asList(new Integer[]{4, 5, 6}));
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(new Integer[]{4, 5, 6}));
         result.add(list2);
-        System.out.println(result.toString());
+        System.out.println(result);
+
+        //List to Array
+        Integer[] array = list.toArray(new Integer[0]);
+        //OR
+        Integer[] array2 = new Integer[list.size()];
+        list.toArray(array2);
+
+        //Copy Array
+        Integer[] a3 = Arrays.copyOf(array, array.length);
+        a3[0] = 5;
+
+        System.out.println(Arrays.asList(array));
+        System.out.println(Arrays.asList(array2));
+        System.out.println(Arrays.asList(a3));
 
         Set<Integer> set = new HashSet<>();
         set.add(1);
