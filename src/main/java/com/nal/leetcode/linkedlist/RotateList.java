@@ -11,8 +11,8 @@ public class RotateList {
         ListNode curr = head;
         int length = 1;
         while (curr.next != null) {
-            curr = curr.next;
             length++;
+            curr = curr.next;
         }
         k = k % length;
         if (k == 0)

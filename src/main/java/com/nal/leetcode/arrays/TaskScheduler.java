@@ -18,10 +18,25 @@ import java.util.*;
  */
 public class TaskScheduler {
 
+    public int leastInterval2(char[] tasks, int n) {
+        if (tasks == null || tasks.length == 0)
+            return 0;
+        int[] freqMap = new int[26];
+        for (char c : tasks) {
+            freqMap[c - 'A']++;
+        }
+        Arrays.sort(freqMap);
+        int max = freqMap[25] - 1;
+        int idle = max * n;
+        for (int i = 24; i >= 0; i--) {
+            idle -= Math.min(freqMap[i], max);
+        }
+        return idle > 0 ? idle + tasks.length : tasks.length;
+    }
+
     public int leastInterval(char[] tasks, int n) {
         if (tasks == null || tasks.length == 0)
             return 0;
-
         Map<Character, Integer> freqMap = new HashMap<>();
         for (char c : tasks) {
             freqMap.put(c, freqMap.getOrDefault(c, 0) + 1);
@@ -29,7 +44,6 @@ public class TaskScheduler {
 
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
         maxHeap.addAll(freqMap.values());
-
         int cycles = 0;
         while (!maxHeap.isEmpty()) {
             List<Integer> temp = new ArrayList<>();

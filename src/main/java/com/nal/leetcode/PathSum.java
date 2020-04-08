@@ -17,14 +17,14 @@ public class PathSum {
         }
     }
 
-    public boolean hasPathSum(TreeNode root, int sum) {
+    public boolean hasPathSumRecursive(TreeNode root, int sum) {
         if (root == null)
             return false;
 
         if (root.left == null && root.right == null && root.val == sum)
             return true;
 
-        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
+        return hasPathSumRecursive(root.left, sum - root.val) || hasPathSumRecursive(root.right, sum - root.val);
     }
 
     public static void main(String[] args) {
@@ -34,18 +34,15 @@ public class PathSum {
         treeNode.left.left =new TreeNode(11);
         treeNode.left.left.left = new TreeNode(7);
         treeNode.left.left.right = new TreeNode(2);
-        System.out.println(pathSum.hasPathSum2(treeNode, 22));
-
-
+        System.out.println(pathSum.hasPathSumIterative(treeNode, 22));
     }
 
-    public boolean hasPathSum2(TreeNode root, int sum) {
+    public boolean hasPathSumIterative(TreeNode root, int sum) {
         if (root == null)
             return false;
 
         Stack<TreeNode> stack = new Stack<>();
         Stack<Integer> sumStack = new Stack<>();
-
         stack.push(root);
         sumStack.push(sum - root.val);
 
@@ -63,7 +60,6 @@ public class PathSum {
                 stack.push(node.right);
                 sumStack.push(value - node.right.val);
             }
-
         }
         return false;
     }

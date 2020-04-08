@@ -28,6 +28,7 @@ public class MeetingRooms {
         if (intervals == null || intervals.size() <= 1)
             return true;
 
+//        Collections.sort(intervals, (a,b) -> a.start - b.start);
         Collections.sort(intervals, Comparator.comparingInt(s -> s.start));
 
         for (int i = 1; i < intervals.size(); i++) {

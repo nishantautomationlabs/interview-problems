@@ -1,7 +1,5 @@
 package com.nal.leetcode.linkedlist;
 
-import com.nal.leetcode.linkedlist.ListNode;
-
 /**
  * Created by nishant on 07/02/20.
  */

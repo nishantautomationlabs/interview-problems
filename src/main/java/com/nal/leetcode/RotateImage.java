@@ -12,7 +12,7 @@ public class RotateImage {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
             return;
 
-        Collections.reverse(Arrays.asList(matrix));
+//        Collections.reverse(Arrays.asList(matrix));
         matrix = reverseMatrix(matrix);
 
         int rows = matrix.length;

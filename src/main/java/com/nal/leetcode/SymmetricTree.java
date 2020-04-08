@@ -36,7 +36,7 @@ public class SymmetricTree {
         return true;
     }
 
-    public boolean isSymmetric(TreeNode root) {
+    public boolean isSymmetricRecursive(TreeNode root) {
         if (root == null)
             return true;
 

@@ -10,9 +10,7 @@ public class RemoveDuplicatesFromSortedList {
     public ListNode deleteDuplicatesRecursive(ListNode head) {
         if(head == null || head.next == null)
             return head;
-
         head.next = deleteDuplicatesRecursive(head.next);
-
         if(head.val == head.next.val)
             return head.next;
         return head;

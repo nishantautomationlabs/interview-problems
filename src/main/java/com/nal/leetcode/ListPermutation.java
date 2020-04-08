@@ -20,6 +20,7 @@ public class ListPermutation {
         return result;
     }
 
+    //O(N!)
     private void permute(int[] nums, boolean[] used, List<Integer> permutation, List<List<Integer>> result) {
         if (permutation.size() == nums.length) {
             result.add(new ArrayList<>(permutation));

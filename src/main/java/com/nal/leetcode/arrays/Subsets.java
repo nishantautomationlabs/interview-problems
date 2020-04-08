@@ -48,6 +48,7 @@ public class Subsets {
             return result;
 
         result.add(new ArrayList<>());
+
         for (int i = 0; i < nums.length; i++) {
             for (int j = result.size() - 1; j >= 0; j--) {
                 result.add(new ArrayList<>(result.get(j)));

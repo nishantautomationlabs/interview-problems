@@ -7,6 +7,10 @@ import java.util.Queue;
 
 /**
  * Created by nishant on 28/02/20.
+ * There are N courses, labelled from 1 to N.
+ * We are given relations[i] = [X, Y], representing a prerequisite relationship between course X and course Y: course X has to be studied before course Y.
+ * In one semester you can study any number of courses as long as you have studied all the prerequisites for the course you are studying.
+ * Return the minimum number of semesters needed to study all courses. If there is no way to study all the courses, return -1.
  */
 public class ParallelCourse {
 
