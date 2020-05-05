@@ -62,7 +62,10 @@ public class MaxAreaOfIsland {
         if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] != 1)
             return 0;
         grid[i][j] = 0;
-        return 1 + calcArea(grid, i - 1, j) + calcArea(grid, i + 1, j) +
-                calcArea(grid, i, j - 1) + calcArea(grid, i, j + 1);
+        return 1 +
+                calcArea(grid, i - 1, j) +
+                calcArea(grid, i + 1, j) +
+                calcArea(grid, i, j - 1) +
+                calcArea(grid, i, j + 1);
     }
 }

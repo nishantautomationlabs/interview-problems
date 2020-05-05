@@ -17,6 +17,8 @@ import java.util.Queue;
  * ]
  * Output: 1->1->2->3->4->4->5->6
  */
+
+//O(NLogK) - N - Total number of nodes in the final output, K - total number of List
 public class MergeKSortedLists {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length == 0)

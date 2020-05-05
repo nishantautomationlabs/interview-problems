@@ -1,13 +1,23 @@
 package com.nal.leetcode.tree;
 
 import com.nal.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
 /**
  * Created by nishant on 03/02/20.
+ * 144. Binary Tree Preorder Traversal
+ * Given a binary tree, return the preorder traversal of its nodes' values.
+ * Example:
+ * Input: [1,null,2,3]
+ *    1
+ *     \
+ *      2
+ *     /
+ *    3
+ *
+ * Output: [1,2,3]
  */
 public class BTPreOrderTraversal {
 

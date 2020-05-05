@@ -10,10 +10,9 @@ import java.util.stream.IntStream;
  */
 public class Test {
     public static void main(String[] args) {
-        Character.isDigit('1');
-        Character.isLetter('a');
-        Character.isLetterOrDigit('a');
-        Character.toLowerCase('A');
+//        boolean b = true || false && false;
+
+        System.out.println("first".substring(0,4));
 
         int a = Integer.valueOf('a');
         int sa = Integer.parseInt("124");
@@ -57,20 +56,6 @@ public class Test {
         String[] sas =
                 "2001:0db8:85a3.0:0.8A2E:0370:7334:".split("0.");
 
-        StringBuilder sb = new StringBuilder("nishant singh");
-        sb.insert(0, "A");
-        sb.append('a');
-        char ab = sb.charAt(3);
-        sb.setCharAt(3, 'a');
-        sb.deleteCharAt(3);
-        sb.append("nishant");
-        sb.append(12);
-//        Math.pow()  //returns double
-//        sb.length();
-        sb.reverse();
-//        sb.setLength(0);
-        System.out.println(sb.toString());
-        System.out.println("Done");
 
         String s = "  hello world!  ";
         s.length();

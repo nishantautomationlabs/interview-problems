@@ -37,7 +37,7 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
             return null;
         TreeNode node = new TreeNode(preorder[pStart]);
         int pos = map.get(preorder[pStart]);
-        node.left = buildTree(preorder, pStart + 1, pStart + pos - iStart, inorder, iStart, pos - 1, map);
+        node.left = buildTree(preorder, pStart + 1, pStart + pos - iStart, inorder, iStart, pos - 1, map);  //pos - iStart is the no of nodes in the left sub-tree
         node.right = buildTree(preorder, pStart + pos - iStart + 1, pEnd, inorder, pos + 1, iEnd, map);
         return node;
     }

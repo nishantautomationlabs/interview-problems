@@ -21,8 +21,9 @@ public class CourseScheduleIII {
         if(courses == null || courses.length == 0 || courses[0].length == 0)
             return 0;
 
-        Arrays.sort(courses, Comparator.comparingInt(s -> s[1]));
+        Arrays.sort(courses, Comparator.comparingInt(s -> s[1]));   //sort by finish date
 
+        //Max heap for duration of the course
         PriorityQueue<Integer> queue = new PriorityQueue<>(Comparator.reverseOrder());
         queue.add(courses[0][0]);
         int days = courses[0][0];

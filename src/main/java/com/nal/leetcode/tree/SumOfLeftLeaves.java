@@ -1,7 +1,6 @@
 package com.nal.leetcode.tree;
 
 import com.nal.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -11,11 +10,11 @@ import java.util.Queue;
  * Find the sum of all left leaves in a given binary tree.
  * Example:
  * <p>
- * 3
- * / \
+ *   3
+ *  / \
  * 9  20
- * /  \
- * 15   7
+ *   /  \
+ *  15   7
  * There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
  */
 public class SumOfLeftLeaves {

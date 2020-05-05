@@ -1,11 +1,17 @@
 package com.nal.leetcode.linkedlist;
 
-import com.nal.leetcode.linkedlist.ListNode;
-
 import java.util.Stack;
 
 /**
  * Created by nishant on 04/02/20.
+ * 234. Palindrome Linked List
+ * Given a singly linked list, determine if it is a palindrome.
+ * Example 1:
+ * Input: 1->2
+ * Output: false
+ * Example 2:
+ * Input: 1->2->2->1
+ * Output: true
  */
 public class PalindromeLinkedList {
 

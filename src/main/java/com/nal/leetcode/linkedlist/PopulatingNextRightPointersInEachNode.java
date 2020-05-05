@@ -14,17 +14,17 @@ public class PopulatingNextRightPointersInEachNode {
         public Node next;
     }
 
-    public Node connect(Node root) {
+    public Node connectRecursive(Node root) {
         if (root == null || (root.left == null && root.right == null))
             return root;
         root.left.next = root.right;
         root.right.next = root.next == null ? null : root.next.left;
-        connect(root.left);
-        connect(root.right);
+        connectRecursive(root.left);
+        connectRecursive(root.right);
         return root;
     }
 
-    public Node connect2(Node root) {
+    public Node connectIterative(Node root) {
         Node leftNode = root;
         while (leftNode != null && leftNode.left != null) {
             connectNodesAtLevelBelow(leftNode);
