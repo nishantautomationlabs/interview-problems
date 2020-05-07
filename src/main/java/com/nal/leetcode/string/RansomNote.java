@@ -1,7 +1,5 @@
 package com.nal.leetcode.string;
 
-import com.nal.leetcode.Solution;
-
 /**
  * Created by nishant on 24/02/20.
  * 383. Ransom Note
