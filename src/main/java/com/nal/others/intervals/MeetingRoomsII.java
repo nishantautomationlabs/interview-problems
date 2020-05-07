@@ -1,10 +1,10 @@
-package com.nal.lintcode.intervals;
+package com.nal.others.intervals;
 
 import java.util.*;
 
 /**
  * Created by nishant on 10/02/20.
- * 919. Meeting Rooms
+ * 919. Meeting Rooms (LintCode)
  * Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), find the minimum number of conference rooms required.
  * Input: intervals = [(0,30),(5,10),(15,20)]
  * Output: 2

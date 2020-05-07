@@ -1,6 +1,5 @@
 package com.nal.leetcode.tree;
 
-import com.nal.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;

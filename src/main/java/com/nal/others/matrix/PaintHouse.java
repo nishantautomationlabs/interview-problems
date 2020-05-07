@@ -1,8 +1,8 @@
-package com.nal.lintcode.matrix;
+package com.nal.others.matrix;
 
 /**
  * Created by nishant on 07/02/20.
- * 515. Paint House
+ * 515. Paint House (LintCode)
  * Greedy Algorithm
  * There are a row of n houses, each house can be painted with one of the three colors: red, blue or green. The cost of painting each house with a certain color is different. You have to paint all the houses such that no two adjacent houses have the same color.
  * input = {{14, 2, 11},

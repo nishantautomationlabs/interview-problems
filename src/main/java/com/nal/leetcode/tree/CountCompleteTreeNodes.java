@@ -1,7 +1,5 @@
 package com.nal.leetcode.tree;
 
-import com.nal.TreeNode;
-
 /**
  * Created by nishant on 11/02/20.
  * 222. Count Complete Tree Nodes

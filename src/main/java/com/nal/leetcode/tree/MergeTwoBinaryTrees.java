@@ -1,7 +1,5 @@
 package com.nal.leetcode.tree;
 
-import com.nal.TreeNode;
-
 /**
  * Created by nishant on 05/02/20.
  * 617. Merge Two Binary Trees

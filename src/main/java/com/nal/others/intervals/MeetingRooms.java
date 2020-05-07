@@ -1,13 +1,12 @@
-package com.nal.lintcode.intervals;
+package com.nal.others.intervals;
 
-import java.lang.reflect.Array;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 /**
  * Created by nishant on 10/02/20.
- * 920. Meeting Rooms
+ * 920. Meeting Rooms (LintCode)
  * Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
  * Input: intervals = [(0,30),(5,10),(15,20)]
  * Output: false

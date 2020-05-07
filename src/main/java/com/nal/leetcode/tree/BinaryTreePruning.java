@@ -1,7 +1,5 @@
 package com.nal.leetcode.tree;
 
-import com.nal.TreeNode;
-
 /**
  * Created by nishant on 06/03/20.
  * 814. Binary Tree Pruning

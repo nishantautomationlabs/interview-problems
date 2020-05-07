@@ -1,8 +1,8 @@
-package com.nal.lintcode.matrix;
+package com.nal.others.matrix;
 
 /**
  * Created by nishant on 10/02/20.
- * 663. Walls and Gates
+ * 663. Walls and Gates (LintCode)
  * You are given a m x n 2D grid initialized with these three possible values.
  * -1 - A wall or an obstacle.
  * 0 - A gate.

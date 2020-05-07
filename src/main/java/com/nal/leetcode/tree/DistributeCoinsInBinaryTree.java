@@ -1,7 +1,5 @@
 package com.nal.leetcode.tree;
 
-import com.nal.TreeNode;
-
 /**
  * Created by nishant on 09/03/20.
  * 979. Distribute Coins in Binary Tree

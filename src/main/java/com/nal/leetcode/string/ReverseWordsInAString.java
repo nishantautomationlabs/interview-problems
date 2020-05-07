@@ -29,7 +29,7 @@ public class ReverseWordsInAString {
         int start = 0;
         for (int i = 0; i < sb.length(); i++) {
             if (sb.charAt(i) == ' ' || i == sb.length() - 1) {
-                int end = i == sb.length() - 1 ? sb.length() - 1 : i - 1;
+                int end = i == sb.length() - 1 ? i : i - 1;
                 reverseString(sb, start, end);
                 i++;
                 while (i < sb.length() && sb.charAt(i) == ' ') {

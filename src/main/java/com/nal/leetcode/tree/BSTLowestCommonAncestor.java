@@ -1,7 +1,5 @@
 package com.nal.leetcode.tree;
 
-import com.nal.TreeNode;
-
 /**
  * Created by nishant on 03/02/20.
  * 235. Lowest Common Ancestor of a Binary Search Tree

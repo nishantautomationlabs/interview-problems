@@ -1,4 +1,4 @@
-package com.nal.hackerrank;
+package com.nal.others.arrays;
 
 import java.util.Scanner;
 

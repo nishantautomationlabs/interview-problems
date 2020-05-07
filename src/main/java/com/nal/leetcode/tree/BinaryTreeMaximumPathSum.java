@@ -1,7 +1,5 @@
 package com.nal.leetcode.tree;
 
-import com.nal.TreeNode;
-
 /**
  * Created by nishant on 28/03/20.
  * 124. Binary Tree Maximum Path Sum

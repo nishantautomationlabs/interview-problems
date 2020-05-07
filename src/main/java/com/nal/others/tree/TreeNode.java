@@ -1,4 +1,4 @@
-package com.nal;
+package com.nal.others.tree;
 
 /**
  * Created by nishant on 18/01/20.
